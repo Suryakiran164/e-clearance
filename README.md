@@ -42,3 +42,5 @@ For any queries contact
 * Shashi M N - [LinkedIn](https://www.linkedin.com/in/shashi-mn-6a9a93385)
 * Monika S - [LinkedIn](https://www.linkedin.com/in/monika-s-294559275)
 * Manasa G Nadiger - [LinkedIn](https://www.linkedin.com/in/manasa-nadiger-45b038306)
+* Tejaswini Mali - [LinkedIn](https://www.linkedin.com/in/tejaswini-mali-032510384)
+* Prashanth D R - [LinkedIn](https://www.linkedin.com/in/prashanth-d-r-b769042b8)
