@@ -25,7 +25,7 @@ const SubmitForm = () => {
         try {
             const config = { headers: { Authorization: `Bearer ${token}` } };
             const { data } = await axios.post(
-                'http://localhost:5000/api/student/submit-form',
+                'https://svit-commonform-backend.onrender.com/api/student/submit-form',
                 { subject, body },
                 config
             );
