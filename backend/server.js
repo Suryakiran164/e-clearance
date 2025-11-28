@@ -18,7 +18,7 @@ connectDB(); // Initialize DB connection
 
 const app = express();
 app.use(express.json()); // Body parser
-app.use(cors({ origin: 'http://localhost:3000', credentials: true })); 
+app.use(cors({ origin: 'https://svit-commonform-frontend.onrender.com', credentials: true })); 
 
 // --- Mount Routes ---
 app.use('/api/auth', authRoutes);
