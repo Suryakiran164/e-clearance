@@ -21,7 +21,7 @@ const HODDashboard = () => {
             } 
 
             const config = { headers: { Authorization: `Bearer ${token}` } };
-            const { data } = await axios.get('http://localhost:5000/api/hod/forms', config);
+            const { data } = await axios.get('https://svit-commonform-backend.onrender.com/api/hod/forms', config);
             setForms(data);
         } catch (error) {
             console.error('Error fetching HOD forms:', error);
@@ -45,7 +45,7 @@ const HODDashboard = () => {
         try {
             const config = { headers: { Authorization: `Bearer ${token}` } };
             await axios.post(
-                `http://localhost:5000/api/hod/forms/${formId}/action`, 
+                `https://svit-commonform-backend.onrender.com/api/hod/forms/${formId}/action`, 
                 { action, remarks }, 
                 config
             );
