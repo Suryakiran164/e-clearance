@@ -19,7 +19,7 @@ const PrincipalDashboard = () => {
 
             const config = { headers: { Authorization: `Bearer ${token}` } };
             // Fetch forms currently pending at Principal level
-            const { data } = await axios.get('http://localhost:5000/api/principal/forms', config);
+            const { data } = await axios.get('https://svit-commonform-backend.onrender.com/api/principal/forms', config);
             setForms(data);
         } catch (error) {
             console.error('Error fetching Principal forms:', error);
@@ -41,7 +41,7 @@ const PrincipalDashboard = () => {
         try {
             const config = { headers: { Authorization: `Bearer ${token}` } };
             await axios.post(
-                `http://localhost:5000/api/principal/forms/${formId}/action`, 
+                `https://svit-commonform-backend.onrender.com/api/principal/forms/${formId}/action`, 
                 { action, remarks }, 
                 config
             );
