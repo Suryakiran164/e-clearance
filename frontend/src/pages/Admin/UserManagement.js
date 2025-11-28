@@ -37,7 +37,7 @@ const UserManagement = () => {
         try {
             const config = { headers: { Authorization: `Bearer ${token}` } };
             const { data } = await axios.post(
-                'http://localhost:5000/api/admin/add-single-user', 
+                'https://svit-commonform-backend.onrender.com/api/admin/add-single-user', 
                 singleUser,
                 config
             );
@@ -65,7 +65,7 @@ const UserManagement = () => {
                 Authorization: `Bearer ${token}`,
                 'Content-Type': 'multipart/form-data'
             }};
-            const { data } = await axios.post('http://localhost:5000/api/admin/bulk-upload', formData, config);
+            const { data } = await axios.post('https://svit-commonform-backend.onrender.com/api/admin/bulk-upload', formData, config);
             setStatusMessage(`SUCCESS: ${data.message}`);
         } catch (err) {
             setStatusMessage(`ERROR: ${err.response?.data?.message || 'Failed to upload file. Check API server logs.'}`);
@@ -84,7 +84,7 @@ const UserManagement = () => {
         try {
             const config = { headers: { Authorization: `Bearer ${token}` } };
             const { data } = await axios.put(
-                'http://localhost:5000/api/admin/manage-proctorship', 
+                'https://svit-commonform-backend.onrender.com/api/admin/manage-proctorship', 
                 { studentUsername, proctorUsername }, 
                 config
             );
