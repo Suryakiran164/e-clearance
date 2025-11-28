@@ -20,7 +20,7 @@ const SubmittedForms = () => {
             try {
                 // Using axios directly here, assuming manual header passing
                 const config = { headers: { Authorization: `Bearer ${token}` } };
-                const { data } = await axios.get('http://localhost:5000/api/student/forms', config);
+                const { data } = await axios.get('https://svit-commonform-backend.onrender.com/api/student/forms', config);
                 setForms(data);
             } catch (err) {
                 console.error('Error fetching submitted forms:', err);
