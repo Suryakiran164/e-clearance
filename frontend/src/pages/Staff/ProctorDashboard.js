@@ -20,7 +20,7 @@ const ProctorDashboard = () => {
             } 
 
             const config = { headers: { Authorization: `Bearer ${token}` } };
-            const { data } = await axios.get('http://localhost:5000/api/proctor/forms', config);
+            const { data } = await axios.get('https://svit-commonform-backend.onrender.com/api/proctor/forms', config);
             
             setForms(data); 
 
@@ -46,7 +46,7 @@ const ProctorDashboard = () => {
         try {
             const config = { headers: { Authorization: `Bearer ${token}` } };
             await axios.post(
-                `http://localhost:5000/api/proctor/forms/${formId}/action`, 
+                `https://svit-commonform-backend.onrender.com/api/proctor/forms/${formId}/action`, 
                 { action, remarks }, 
                 config
             );
