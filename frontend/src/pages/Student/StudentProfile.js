@@ -23,7 +23,7 @@ const StudentProfile = () => {
                 // Using axios directly here, assuming manual header passing
                 const config = { headers: { Authorization: `Bearer ${token}` } };
                 // Adjust endpoint path based on your file structure (two levels up to src, then into context)
-                const { data } = await axios.get('http://localhost:5000/api/student/profile', config);
+                const { data } = await axios.get('https://svit-commonform-backend.onrender.com/api/student/profile', config);
                 setProfile(data);
             } catch (err) {
                 setError('Failed to fetch profile data. Check network or server.');
